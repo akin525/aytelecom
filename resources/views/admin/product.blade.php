@@ -46,7 +46,7 @@
                             <th>Plan</th>
                             <th>Actual Amount</th>
                             <th>Selling Amount</th>
-                            <th>Reseller Amount</th>
+{{--                            <th>Reseller Amount</th>--}}
                             <th>Status</th>
                             <th>Switch</th>
                             <th>Edit</th>
@@ -62,7 +62,7 @@
                                 <td> {{$seller->plan}}</td>
                                 <td> {{$seller->amount}}</td>
                                 <td> {{$seller->tamount}}</td>
-                                <td> {{$seller->ramount}}</td>
+{{--                                <td> {{$seller->ramount}}</td>--}}
                                 {{--                                <td><a href="{{route('editpayment', $pay->id)}}"--}}
                                 {{--                                       {{$pay->value}}class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>--}}
                                 {{--                                </td>--}}

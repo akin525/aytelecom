@@ -16,6 +16,7 @@ use App\Http\Controllers\EducationController;
 use App\Http\Controllers\EkectController;
 use App\Http\Controllers\listdata;
 use App\Http\Controllers\RefersController;
+use App\Http\Controllers\RenoController;
 use App\Http\Controllers\ResellerController;
 use App\Http\Controllers\VertualController;
 use Illuminate\Support\Facades\Auth;
@@ -153,6 +154,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/deposits', [TransactionController::class, 'in'])->name('admin/deposits');
     Route::get('admin/bills', [TransactionController::class, 'bill'])->name('admin/bills');
     Route::get('admin/finddeposite', [TransactionController::class, 'index'])->name('admin/finddeposite');
+    Route::get('admin/sell', [RenoController::class, 'renoproduct'])->name('admin/sell');
     Route::post('admin/depo', [TransactionController::class, 'finduser'])->name('admin/depo');
 
 

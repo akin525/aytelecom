@@ -12,6 +12,12 @@
         </div>
     </div>
 </div>
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
 <div class="card">
     <div class="card-body">
         <x-jet-validation-errors class="alert alert-danger" />

@@ -62,7 +62,7 @@
     </div>
 
     <div class="sidebar">
-        <div class=""><a class="" href="{{route('dashboard')}}"><img src="{{asset('bv2.png')}}" alt="" width="80"></a></div>
+{{--        <div class=""><a class="" href="{{route('dashboard')}}"><img src="{{asset('bv2.png')}}" alt="" width="80"></a></div>--}}
         <div class="menu">
             <ul>
                 @if(Auth::user()->role=='admin')

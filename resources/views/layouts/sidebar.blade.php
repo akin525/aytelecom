@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intez</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('ayy.jpeg')}}">
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 
 <body class="dashboard">
@@ -27,7 +27,7 @@
                 <div class="col-xxl-12">
                     <div class="header-content">
                         <div class="header-left">
-                            <div class="brand-logo"><a class="mini-logo" href="/dashboard"><img src="{{asset('images/logoi.png')}}" alt="" width="40"></a></div>
+                            <div class="brand-logo"><a class="mini-logo" href="/dashboard"><img src="{{asset('bv2.png')}}" alt="" width="40"></a></div>
                             <div class="search">
                                 <form action="#">
                                     <div class="input-group"><input type="text" class="form-control" placeholder="Search Here"><span class="input-group-text"><i class="ri-search-line"></i></span></div>
@@ -62,7 +62,7 @@
     </div>
 
     <div class="sidebar">
-        <div class="brand-logo"><a class="full-logo" href="{{route('dashboard')}}"><img src="{{asset('images/logoi.png')}}" alt="" width="30"></a></div>
+        <div class=""><a class="" href="{{route('dashboard')}}"><img src="{{asset('bv2.png')}}" alt="" width="80"></a></div>
         <div class="menu">
             <ul>
                 @if(Auth::user()->role=='admin')
@@ -87,11 +87,13 @@
                         <span class="nav-text">Recharge</span>
                     </a>
                 </li>
+
 {{--                <li><a href="{{route('select')}}">--}}
 {{--                        <span><i class="ri-chat-new-fill"></i></span>--}}
 {{--                        <span class="nav-text">Buy Datae</span>--}}
 {{--                    </a>--}}
 {{--                </li>--}}
+
                 <li><a href="{{url('picktv')}}">
                         <span><i class="ri-tv-2-fill"></i></span>
                         <span class="nav-text">Paytv</span>

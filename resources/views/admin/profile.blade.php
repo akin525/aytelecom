@@ -47,7 +47,7 @@
                                     @if($user->photo!=null)
                                         <img src="https://mcd.5starcompany.com.ng/app/avatar/{{$user->username }}.JPG" alt="img" class="img img-thumbnail">
                                     @else
-                                        <img alt="image" class="img img-thumbnail" width="300" src="{{asset('images/logoi.png')}}">
+                                        <img alt="image" class="img img-thumbnail" width="300" src="{{asset('bv2.png')}}">
                                     @endif
                                     <span class="fro-profile_main-pic-change"><i class="fa fa-camera"></i></span></div>
                                 <div class="met-profile_user-detail">

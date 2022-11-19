@@ -123,7 +123,7 @@
                                             <div>
                                                 <center>
                                                     <a href="#">
-                                                        <img width="200" src="{{asset("images/logoi.png")}}"  alt="">
+                                                        <img width="200" src="{{asset("bv2.png")}}"  alt="">
                                                     </a>
                                                 </center>
                                             </div>

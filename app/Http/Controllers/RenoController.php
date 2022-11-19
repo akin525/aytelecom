@@ -23,6 +23,15 @@ function renoproduct()
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo $response;
+//    echo $response;
+    $data = json_decode($response, true);
+    $success = $data["data"][0]['plan'];
+
+    foreach ($data as $re){
+        $po=$re;
+//        return $po;
+
+    }
+//    return view('admin/sell', compact('product'));
 }
 }

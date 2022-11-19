@@ -5,7 +5,7 @@
                 <div class="auth-form card">
                     <div class="card-body">
                         <div class="mini-logo text-center my-4">
-                            <a href="{{route('register')}}"><img src="{{asset('images/logoi.png')}}" alt=""></a>
+                            <a href="{{route('register')}}"><img width="150" src="{{asset('ayy.jpeg')}}" alt=""></a>
                             <h4 class="card-title mt-5">Create your account</h4>
                         </div>
                         <form method="post" name="myform" class="signin_validate row g-3"

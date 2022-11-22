@@ -18,20 +18,23 @@ function renoproduct()
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => 'GET',
         CURLOPT_HTTPHEADER => array(
-            'apikey: RENO-62f23b335501d3.82459331'
+            'apikey: RENO-62f23b335501d3.82459331',
+
+            'Accept: application/json',
+                    'Content-Type: application/json'
         )));
     $response = curl_exec($curl);
 
     curl_close($curl);
-//    echo $response;
+//    return $response;
     $data = json_decode($response, true);
-    $success = $data["data"][0]['plan'];
+//    foreach ($data as $plan) {
+//        $name = $plan["plan"];
+//        $amount = $plan["ramount"];
+//    }
 
-    foreach ($data as $re){
-        $po=$re;
-//        return $po;
+    return view('admin/sell', compact('data'));
 
     }
-//    return view('admin/sell', compact('product'));
-}
+
 }

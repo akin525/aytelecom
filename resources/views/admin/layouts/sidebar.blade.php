@@ -326,6 +326,11 @@
                         <a class="nav-link menu-link" href="{{route('admin/product')}}"   aria-controls="sidebarDashboards">
                             <i class="ri-shopping-cart-fill"></i> <span data-key="t-data">Reno Product</span>
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="{{route('admin/sell')}}"   aria-controls="sidebarDashboards">
+                            <i class="ri-shopping-cart-fill"></i> <span data-key="t-data">Reno SellingPrice</span>
+                        </a>
                     </li> <!-- end Dashboard Menu -->
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="{{route('admin/setcharge')}}"   aria-controls="sidebarDashboards">

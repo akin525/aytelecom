@@ -35,13 +35,13 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($product as $seller)
+                                @foreach($data as $seller)
                                     <tr>
 
-                                        <td> {{$seller->network}} </td>
-                                        <td> {{$seller->plan}}</td>
-                                        <td> {{$seller->ramount}}</td>
-                                    <td>@if($seller->status=="1")<h6 class="btn-success">Active</h6>@else<h6
+                                        <td> {{$seller['network']}} </td>
+                                        <td> {{$seller['plan']}}</td>
+                                        <td> {{$seller['ramount']}}</td>
+                                    <td>@if($seller['status']=="1")<h6 class="btn-success">Active</h6>@else<h6
                                                 class="btn-warning">
                                                 Not-Active</h6> @endif
                                     </td>

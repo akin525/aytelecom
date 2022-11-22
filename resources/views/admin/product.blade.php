@@ -44,7 +44,7 @@
                         <tr>
                             <th>Network</th>
                             <th>Plan</th>
-                            <th>Actual Amount</th>
+{{--                            <th>Actual Amount</th>--}}
                             <th>Selling Amount</th>
 {{--                            <th>Reseller Amount</th>--}}
                             <th>Status</th>
@@ -60,7 +60,7 @@
                                 <link rel="stylesheet" href="{{asset('demo.css')}}"/>
                                 <td> {{$seller->network}} </td>
                                 <td> {{$seller->plan}}</td>
-                                <td> {{$seller->amount}}</td>
+{{--                                <td> {{$seller->amount}}</td>--}}
                                 <td> {{$seller->tamount}}</td>
 {{--                                <td> {{$seller->ramount}}</td>--}}
                                 {{--                                <td><a href="{{route('editpayment', $pay->id)}}"--}}

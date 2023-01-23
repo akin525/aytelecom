@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('ayy.jpeg')}}">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5614354777986303"
+            crossorigin="anonymous"></script>
 </head>
 
 <body class="dashboard">

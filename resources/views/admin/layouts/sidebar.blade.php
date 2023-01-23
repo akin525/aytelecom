@@ -30,7 +30,8 @@
     <!-- custom Css-->
     <link href="{{asset('admin/assets/css/custom.min.css')}}" rel="stylesheet" type="text/css" />
 
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5614354777986303"
+            crossorigin="anonymous"></script>
     <link href="{{asset('admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css')}}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('admin/assets/extra-libs/multicheck/multicheck.css')}}">
 </head>

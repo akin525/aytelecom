@@ -8,6 +8,8 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon.png')}}">
     <!-- Custom Stylesheet -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5614354777986303"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 
@@ -149,7 +151,7 @@
         }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://wa.me/2348119290699/?text=Goodday, My Username is....." class="float" target="_blank">
+    <a href="https://wa.me/2348156400044/?text=Goodday, My Username is....." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
     </body>

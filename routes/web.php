@@ -18,6 +18,7 @@ use App\Http\Controllers\listdata;
 use App\Http\Controllers\RefersController;
 use App\Http\Controllers\RenoController;
 use App\Http\Controllers\ResellerController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\VertualController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -50,12 +51,7 @@ Route::get('/', function () {
 });
 Route::post('log', [AuthController::class, 'customLogin'])->name('log');
 
-//Route::get('select', function () {
-//    return view('select');
-//});
-//Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//    return view('dashboard');
-//})->name('dashboard');
+
 Route::middleware(['auth'])->group(function () {
     Route::view('picktv', 'picktv');
     Route::post('nec', [EducationController::class, 'neco'])->name('nec');
@@ -96,6 +92,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('tran/{reference}', [FundController::class, 'tran'])->name('tran');
     Route::get('vertual', [VertualController::class, 'vertual'])->name('vertual');
     Route::view('recharge', 'recharge');
+    Route::post('update', [UserController::class, 'updateuserdecry'])->name('update');
+    Route::get('myaccount', [UserController::class, 'viewuserencry'])->name('myaccount');
 });
 
 Route::get('/logout', function(){

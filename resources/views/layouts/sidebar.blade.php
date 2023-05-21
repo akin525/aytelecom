@@ -52,7 +52,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="dropdown-item" href="{{route('profile.show')}}"><span><i class="ri-user-line"></i></span>Profile</a>
+                                    <a class="dropdown-item" href="{{route('myaccount')}}"><span><i class="ri-user-line"></i></span>Profile</a>
+                                    <a class="dropdown-item" href="{{route('profile.show')}}"><span><i class="ri-settings-2-line"></i></span>Settings</a>
                                    <a class="dropdown-item logout" href="{{route('logout')}}"><i class="ri-logout-circle-line"></i>Logout</a>
                                 </div>
                             </div>

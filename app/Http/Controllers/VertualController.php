@@ -19,6 +19,11 @@ class VertualController
 {
     public function vertual(Request $request)
     {
+        if (Auth::user()->address==null){
+            Alert::warning('Update', 'Please Kindly update Your Account And Generate Again');
+            return redirect('myaccount');
+
+        }
         if (Auth::check()) {
             $user = User::find($request->user()->id);
             $username=$user->username.rand(1111, 9999);
@@ -29,7 +34,7 @@ class VertualController
             $curl = curl_init();
 
             curl_setopt_array($curl, array(
-                CURLOPT_URL => 'https://app2.mcd.5starcompany.com.ng/api/reseller/virtual-account',
+                CURLOPT_URL => 'https://integration.mcd.5starcompany.com.ng/api/reseller/virtual-account3',
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => '',
                 CURLOPT_MAXREDIRS => 10,
@@ -39,23 +44,27 @@ class VertualController
                 CURLOPT_SSL_VERIFYHOST => 0,
                 CURLOPT_SSL_VERIFYPEER => 0,
                 CURLOPT_CUSTOMREQUEST => 'POST',
-                CURLOPT_POSTFIELDS => array('account_name' => $name, 'business_short_name' => 'Aytelecom', 'uniqueid' => $username, 'email' => $email, 'phone' => $phone, 'webhook_url' => 'https://aytelecom.com.ng/api/run',),
+                CURLOPT_POSTFIELDS => array('account_name' => $name,
+                    'business_short_name' => 'AYTELECOM','uniqueid' => $username,
+                    'email' => $email,'dob' => $user->dob,
+                    'address' => $user->address,'gender' => $user->gender,
+                    'phone' =>$user->phone,'webhook_url' => 'https://aytelecom.com.ng/api/run'),
                 CURLOPT_HTTPHEADER => array(
                     'Authorization: mcd_key_75rq4][oyfu545eyuriup1q2yue4poxe3jfd'
                 ),
             ));
 
             $response = curl_exec($curl);
-
             curl_close($curl);
             $data = json_decode($response, true);
             if ($data['success']==1){
-                $account = $data["data"]["account_name"];
+                $account = $data["data"]["customer_name"];
                 $number = $data["data"]["account_number"];
                 $bank = $data["data"]["bank_name"];
 
                 $user->account_number = $number;
                 $user->account_name = $account;
+                $user->bank = $bank;
                 $user->save();
 
                 Alert::success('Succeaa', 'Virtual Account Successful Created');
